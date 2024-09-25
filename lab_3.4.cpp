@@ -19,7 +19,7 @@ int main()
 	cout << "Enter x: "; cin >> x;
 	cout << "Enter y: "; cin >> y;
 
-	if ((x * x + (y - R) * (y - R) <= R * R)) //перевірка для круга
+	if ((pow(x + R, 2) + pow(y - R, 2) <= R * R))  //перевірка для круга
 		cout << "yes" << endl;
 	else
 		if ((x >= 0 && x <= 2 * R && y >= -R && y <= 0)) //перевірка для прямокутника
